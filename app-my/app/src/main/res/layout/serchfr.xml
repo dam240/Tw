@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:titlebar="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+   <com.gturedi.views.StatefulLayout
+
+         android:id="@+id/stateful"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:stfAnimationEnabled="true"
+        app:stfInAnimation="@android:anim/slide_in_left"
+app:stfOutAnimation="@android:anim/slide_out_right">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+
+            >
+
+               <com.wuhenzhizao.titlebar.widget.CommonTitleBar
+                   android:id="@+id/searchbar"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   titlebar:centerType="searchView"
+                   titlebar:leftDrawable="@drawable/comm_titlebar_back_normal"
+                   titlebar:leftDrawablePadding="0dp"
+                   titlebar:leftType="textView"
+                   />
+
+               <ListView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/listserch">
+
+               </ListView>
+                   </LinearLayout>
+
+               </com.gturedi.views.StatefulLayout>
+</LinearLayout>
+
